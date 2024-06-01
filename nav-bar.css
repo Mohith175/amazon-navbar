@@ -13,6 +13,8 @@
 }
 .nav-middle{
     display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 .search-bar{
     height:35px;
@@ -53,4 +55,24 @@
 }
 .orders:hover{
     text-decoration: underline;
+}
+@media (max-width:800px){
+    .orders{
+        display:none;
+    }
+}
+@media (max-width:700px){
+    .amazon-logo{
+        display:none;
+    }
+}
+@media(max-width:620px){
+    .cart,.quantity{
+        display:none;
+    }
+}
+@media(max-width:600px){
+    .search-bar{
+        width:400px;
+    }
 }
